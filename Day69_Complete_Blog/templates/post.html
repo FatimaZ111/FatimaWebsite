@@ -35,8 +35,8 @@
 
 
 <!--           Comments Area -->
-          <div class=" comment container-fluid">
-              <ul class="commentList">
+              <h2 class="commentsHeading">Comments</h2>
+              <ul class="list-group">
                 {% if pre_comments %}
                 {% for comments in pre_comments %}
                     <li class="list-group-item">
@@ -58,7 +58,8 @@
                     </li>
                 {% endfor %}
                 {% endif %}
-                <li>
+              </ul>
+                    <h2 class="commentsHeading">Add Comments</h2>
                     <div class="commentText">
                           {{ ckeditor.load() }}
                           {{ ckeditor.config(name='body') }}
